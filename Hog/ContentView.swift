@@ -25,7 +25,7 @@ struct ContentView: View {
             .padding()
         }
         .sheet(isPresented: $isShowingConfigTurnSheet) {
-            TurnConfigView()
+            TurnConfigView(gameManager: gameManager)
                 .presentationCornerRadius(40)
         }
     }
@@ -37,6 +37,7 @@ struct ContentView: View {
                 .fontWeight(.semibold)
             Spacer()
             VStack(alignment: .leading, spacing: 10) {
+                //Fix later getting sleepy
                 Text("Player 1: \(gameManager.players[0].points)")
                     .foregroundStyle(.blue)
                 Text("Player 2: \((gameManager.players[1].points))")
