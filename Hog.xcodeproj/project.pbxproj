@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F780FE92DFFD95300FAB3D9 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F780FE82DFFD94E00FAB3D9 /* PlayerModel.swift */; };
+		7F780FF12DFFE72700FAB3D9 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F780FF02DFFE72400FAB3D9 /* GameManager.swift */; };
 		E89F20B22DFFA37500C488EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20AF2DFFA37500C488EF /* ContentView.swift */; };
 		E89F20B32DFFA37500C488EF /* HogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B02DFFA37500C488EF /* HogApp.swift */; };
 		E89F20B42DFFA37500C488EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89F20AE2DFFA37500C488EF /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F780FE82DFFD94E00FAB3D9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		7F780FF02DFFE72400FAB3D9 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		E89F20A02DFEA52800C488EF /* Hog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89F20AE2DFFA37500C488EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E89F20AF2DFFA37500C488EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 				E89F20B02DFFA37500C488EF /* HogApp.swift */,
 				E89F20B92DFFA9AA00C488EF /* Dice.swift */,
 				E89F20AF2DFFA37500C488EF /* ContentView.swift */,
+				7F780FF02DFFE72400FAB3D9 /* GameManager.swift */,
+				7F780FE82DFFD94E00FAB3D9 /* PlayerModel.swift */,
 				E89F20B52DFFA70300C488EF /* TurnConfigView.swift */,
 				E89F20B72DFFA97A00C488EF /* DicesView.swift */,
 				E89F20AE2DFFA37500C488EF /* Assets.xcassets */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F780FE92DFFD95300FAB3D9 /* PlayerModel.swift in Sources */,
 				E89F20B62DFFA70300C488EF /* TurnConfigView.swift in Sources */,
 				E89F20B82DFFA97A00C488EF /* DicesView.swift in Sources */,
+				7F780FF12DFFE72700FAB3D9 /* GameManager.swift in Sources */,
 				E89F20BA2DFFA9AA00C488EF /* Dice.swift in Sources */,
 				E89F20B22DFFA37500C488EF /* ContentView.swift in Sources */,
 				E89F20B32DFFA37500C488EF /* HogApp.swift in Sources */,
@@ -284,6 +292,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
