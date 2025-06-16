@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E89F20B22DFFA37500C488EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20AF2DFFA37500C488EF /* ContentView.swift */; };
+		E89F20B32DFFA37500C488EF /* HogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B02DFFA37500C488EF /* HogApp.swift */; };
+		E89F20B42DFFA37500C488EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89F20AE2DFFA37500C488EF /* Assets.xcassets */; };
+		E89F20B62DFFA70300C488EF /* TurnConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B52DFFA70300C488EF /* TurnConfigView.swift */; };
+		E89F20B82DFFA97A00C488EF /* DicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B72DFFA97A00C488EF /* DicesView.swift */; };
+		E89F20BA2DFFA9AA00C488EF /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B92DFFA9AA00C488EF /* Dice.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E89F20A02DFEA52800C488EF /* Hog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89F20AE2DFFA37500C488EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E89F20AF2DFFA37500C488EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E89F20B02DFFA37500C488EF /* HogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogApp.swift; sourceTree = "<group>"; };
+		E89F20B52DFFA70300C488EF /* TurnConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnConfigView.swift; sourceTree = "<group>"; };
+		E89F20B72DFFA97A00C488EF /* DicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicesView.swift; sourceTree = "<group>"; };
+		E89F20B92DFFA9AA00C488EF /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E89F20A22DFEA52800C488EF /* Hog */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Hog;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E89F209D2DFEA52800C488EF /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		E89F20972DFEA52700C488EF = {
 			isa = PBXGroup;
 			children = (
-				E89F20A22DFEA52800C488EF /* Hog */,
+				E89F20B12DFFA37500C488EF /* Hog */,
 				E89F20A12DFEA52800C488EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,19 @@
 				E89F20A02DFEA52800C488EF /* Hog.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E89F20B12DFFA37500C488EF /* Hog */ = {
+			isa = PBXGroup;
+			children = (
+				E89F20B02DFFA37500C488EF /* HogApp.swift */,
+				E89F20B92DFFA9AA00C488EF /* Dice.swift */,
+				E89F20AF2DFFA37500C488EF /* ContentView.swift */,
+				E89F20B52DFFA70300C488EF /* TurnConfigView.swift */,
+				E89F20B72DFFA97A00C488EF /* DicesView.swift */,
+				E89F20AE2DFFA37500C488EF /* Assets.xcassets */,
+			);
+			path = Hog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +79,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				E89F20A22DFEA52800C488EF /* Hog */,
 			);
 			name = Hog;
 			packageProductDependencies = (
@@ -109,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89F20B42DFFA37500C488EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +137,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89F20B62DFFA70300C488EF /* TurnConfigView.swift in Sources */,
+				E89F20B82DFFA97A00C488EF /* DicesView.swift in Sources */,
+				E89F20BA2DFFA9AA00C488EF /* Dice.swift in Sources */,
+				E89F20B22DFFA37500C488EF /* ContentView.swift in Sources */,
+				E89F20B32DFFA37500C488EF /* HogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
