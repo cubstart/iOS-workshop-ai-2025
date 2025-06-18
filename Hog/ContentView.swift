@@ -32,12 +32,11 @@ struct ContentView: View {
     
     private var headerView: some View {
         HStack {
-            Text("GOAL: \(100)")
+            Text("GOAL: \(gameManager.winningScore)")
                 .font(.title)
                 .fontWeight(.semibold)
             Spacer()
             VStack(alignment: .leading, spacing: 10) {
-                //Fix later getting sleepy
                 Text("Player 1: \(gameManager.players[0].points)")
                     .foregroundStyle(.blue)
                 Text("Player 2: \((gameManager.players[1].points))")
