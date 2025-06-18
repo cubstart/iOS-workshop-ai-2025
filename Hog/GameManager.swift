@@ -6,7 +6,6 @@
 //
 import SwiftUI
 
-//Maybe add a nil and unwrapping 
 @Observable
 class GameManager {
     var players: [Player] = [Player(), Player()]
@@ -32,7 +31,6 @@ class GameManager {
         dices.removeAll()
     }
     
-    //Where to add?
     func endTurn() {
         currentPlayerIndex = calcIndex()
     }
