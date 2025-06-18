@@ -15,6 +15,7 @@ class GameManager {
     var winner: Player?
     let winningScore: Int = 100
     
+    //Check
     var currentPlayer: Player {
         players[currentPlayerIndex]
     }
@@ -50,6 +51,7 @@ class GameManager {
         dices.removeAll()
         for _ in 0..<amount {
             let randomValue = Int.random(in: 1...6)
+            //Is this too much
             dices.append(Dice(value: DiceValue(rawValue: String(randomValue)) ?? .one))
         }
         
@@ -63,6 +65,7 @@ class GameManager {
     private func calcScore() -> Int {
         var sum = 0
         for dice in dices {
+            //Same for this
             let value = Int(dice.value.rawValue) ?? 0
             if value == 1 {
                 return 1
