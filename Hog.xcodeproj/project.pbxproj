@@ -13,6 +13,8 @@
 		E89F20B62DFFA70300C488EF /* TurnConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B52DFFA70300C488EF /* TurnConfigView.swift */; };
 		E89F20B82DFFA97A00C488EF /* DicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B72DFFA97A00C488EF /* DicesView.swift */; };
 		E89F20BA2DFFA9AA00C488EF /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20B92DFFA9AA00C488EF /* Dice.swift */; };
+		E89F20DC2E02AC8500C488EF /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20DB2E02AC8500C488EF /* GameManager.swift */; };
+		E89F20DE2E02B83000C488EF /* WinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89F20DD2E02B83000C488EF /* WinnerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E89F20B52DFFA70300C488EF /* TurnConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnConfigView.swift; sourceTree = "<group>"; };
 		E89F20B72DFFA97A00C488EF /* DicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicesView.swift; sourceTree = "<group>"; };
 		E89F20B92DFFA9AA00C488EF /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		E89F20DB2E02AC8500C488EF /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		E89F20DD2E02B83000C488EF /* WinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			children = (
 				E89F20B02DFFA37500C488EF /* HogApp.swift */,
 				E89F20B92DFFA9AA00C488EF /* Dice.swift */,
+				E89F20DB2E02AC8500C488EF /* GameManager.swift */,
 				E89F20AF2DFFA37500C488EF /* ContentView.swift */,
 				E89F20B52DFFA70300C488EF /* TurnConfigView.swift */,
+				E89F20DD2E02B83000C488EF /* WinnerView.swift */,
 				E89F20B72DFFA97A00C488EF /* DicesView.swift */,
 				E89F20AE2DFFA37500C488EF /* Assets.xcassets */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E89F20B62DFFA70300C488EF /* TurnConfigView.swift in Sources */,
+				E89F20DE2E02B83000C488EF /* WinnerView.swift in Sources */,
+				E89F20DC2E02AC8500C488EF /* GameManager.swift in Sources */,
 				E89F20B82DFFA97A00C488EF /* DicesView.swift in Sources */,
 				E89F20BA2DFFA9AA00C488EF /* Dice.swift in Sources */,
 				E89F20B22DFFA37500C488EF /* ContentView.swift in Sources */,

@@ -10,6 +10,8 @@ import SwiftUI
 struct TurnConfigView: View {
     @Environment(\.dismiss) private var dismiss
     
+    var gameManager: GameManager
+    
     @State private var numOfDices = 1
     @State private var questionDices: [Dice] = []
     
@@ -36,6 +38,7 @@ struct TurnConfigView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
+                        gameManager.rollDice(amount: numOfDices)
                         dismiss()
                     }) {
                         Text("Done")
@@ -73,5 +76,5 @@ struct TurnConfigView: View {
 }
 
 #Preview {
-    TurnConfigView()
+    TurnConfigView(gameManager: GameManager())
 }
