@@ -9,7 +9,7 @@ import SwiftUI
 //Maybe add a nil and unwrapping 
 @Observable
 class GameManager {
-    var players: [Player] = [Player(playerID: 1), Player(playerID: 2)]
+    var players: [Player] = [Player(), Player()]
     var dices: [Dice] = []
     var currentPlayerIndex: Int = 0
     var isGameOver: Bool = false
@@ -25,7 +25,7 @@ class GameManager {
     }
     
     func resetGame() {
-        players = [Player(playerID: 1), Player(playerID: 2)]
+        players = [Player(), Player()]
         currentPlayerIndex = 0
         isGameOver = false
         winner = nil

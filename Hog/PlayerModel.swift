@@ -6,6 +6,5 @@
 //
 
 struct Player {
-    let playerID : Int
     var points : Int = 0
 }
