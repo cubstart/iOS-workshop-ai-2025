@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isShowingConfigTurnSheet = false
+    @State private var gameManager = GameManager()
     
     var body: some View {
         ZStack {
@@ -17,37 +18,28 @@ struct ContentView: View {
             VStack {
                 headerView
                 Spacer()
-                DicesView(dices: [
-                    Dice(value: .one),
-                    Dice(value: .two),
-                    Dice(value: .one),
-                    Dice(value: .two),
-                    Dice(value: .one),
-                    Dice(value: .two),
-                    Dice(value: .one),
-                    Dice(value: .two)
-                ])
+                DicesView(dices: gameManager.dices)
                 Spacer()
                 takeTurnButton
             }
             .padding()
         }
         .sheet(isPresented: $isShowingConfigTurnSheet) {
-            TurnConfigView()
+            TurnConfigView(gameManager: gameManager)
                 .presentationCornerRadius(40)
         }
     }
     
     private var headerView: some View {
         HStack {
-            Text("GOAL: \(100)")
+            Text("GOAL: \(gameManager.winningScore)")
                 .font(.title)
                 .fontWeight(.semibold)
             Spacer()
             VStack(alignment: .leading, spacing: 10) {
-                Text("Player 1: \(30)")
+                Text("Player 1: \(gameManager.players[0].points)")
                     .foregroundStyle(.blue)
-                Text("Player 2: \(63)")
+                Text("Player 2: \((gameManager.players[1].points))")
             }
             .font(.system(size: 20))
             .fontWeight(.semibold)

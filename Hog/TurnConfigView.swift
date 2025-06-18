@@ -12,6 +12,7 @@ struct TurnConfigView: View {
     
     @State private var numOfDices = 1
     @State private var questionDices: [Dice] = []
+    @Bindable var gameManager : GameManager
     
     var body: some View {
         NavigationView {
@@ -36,6 +37,8 @@ struct TurnConfigView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: {
+                        gameManager.rollDice(amount: numOfDices)
+                        gameManager.endTurn()
                         dismiss()
                     }) {
                         Text("Done")
@@ -73,5 +76,5 @@ struct TurnConfigView: View {
 }
 
 #Preview {
-    TurnConfigView()
+    TurnConfigView(gameManager: GameManager())
 }
